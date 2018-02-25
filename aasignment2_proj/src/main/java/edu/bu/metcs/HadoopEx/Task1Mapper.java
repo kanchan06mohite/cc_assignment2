@@ -25,7 +25,7 @@ public class Task1Mapper extends Mapper<Object, Text, Text, IntWritable> {
 			if (tripInfo != null) {
 				tripArr = tripInfo.split(",");
 				// array length 17 implies its correct and clean record
-				if (tripArr.length >= 6) {
+				if (tripArr.length >= 17) {
 					// tripArr[5] is trip_distance
 					if (!tripArr[5].isEmpty()) {
 						if (Double.parseDouble(tripArr[5]) > 0)
